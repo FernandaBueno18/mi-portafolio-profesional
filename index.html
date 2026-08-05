@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernanda Bueno | Portafolio Profesional & Presentación de Proyectos</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            700: '#075985',
+                            800: '#0c4a6e',
+                            900: '#0f172a',
+                        },
+                        accent: {
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                        },
+                        seny: {
+                            500: '#ec4899',
+                            600: '#db2777',
+                            700: '#be185d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 6px;
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        .slide-fade {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 0.4; }
+            100% { transform: scale(0.95); opacity: 0.8; }
+        }
+        .animate-pulse-ring {
+            animation: pulse-ring 2s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-brand-500 selection:text-white pb-16">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-3">
+                    <span class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-accent-500 text-white font-bold flex items-center justify-center text-lg shadow-lg shadow-brand-500/20">FB</span>
+                    <div>
+                        <span class="font-bold text-lg text-white tracking-tight block leading-tight">Fernanda Bueno</span>
+                        <span class="text-xs text-slate-400 font-medium">Coordinación, Producto & Operaciones B2B</span>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex space-x-6 text-sm font-medium text-slate-300">
+                    <a href="#inicio" class="hover:text-brand-500 transition">Inicio</a>
+                    <a href="#ia-herramientas" class="hover:text-amber-400 transition flex items-center gap-1.5 font-semibold text-amber-300">
+                        <i class="fa-solid fa-wand-magic-sparkles text-xs"></i> Asistente IA
+                    </a>
+                    <a href="#presentacion-pptx" class="hover:text-brand-500 transition flex items-center gap-1.5 font-semibold text-brand-400">
+                        <i class="fa-solid fa-file-powerpoint text-xs"></i> Presentación
+                    </a>
+                    <a href="#proyectos" class="hover:text-brand-500 transition">Entregables</a>
+                    <a href="#trayectoria" class="hover:text-brand-500 transition">Trayectoria</a>
+                    <a href="#seny" class="hover:text-seny-500 transition">Seny & Voluntariado</a>
+                    <a href="#certificaciones" class="hover:text-brand-500 transition">Certificaciones</a>
+                </div>
+
+                <div class="flex items-center space-x-3">
+                    <button onclick="toggleFloatingChat()" class="lg:hidden text-amber-400 bg-amber-500/10 border border-amber-500/30 p-2 rounded-xl text-xs font-bold flex items-center gap-1.5">
+                        <i class="fa-solid fa-robot"></i> IA
+                    </button>
+                    <a href="#contacto" class="bg-gradient-to-r from-brand-600 to-accent-600 hover:from-brand-500 hover:to-accent-500 text-white text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-xl transition shadow-lg shadow-brand-600/30">
+                        Contacto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-brand-500/10 border border-brand-500/20 px-4 py-1.5 rounded-full text-brand-400 text-xs font-semibold">
+                        <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                        <span>Coordinación Operativa & Product Owner B2B</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                        Estructura, optimización de procesos y liderazgo operativo
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-300 max-w-2xl font-normal leading-relaxed">
+                        Licenciada en Administración con más de 6 años de experiencia en entornos B2B e industriales. Especializada en liderar la operación de cuentas clave automotrices, asegurar el cumplimiento de SLAs, controlar el flujo de caja y diseñar herramientas útiles de gestión.
+                    </p>
+
+                    <!-- Interactive Gemini Audio Pitch & Actions -->
+                    <div class="pt-4 flex flex-wrap gap-4 justify-center lg:justify-start">
+                        <button onclick="playGeminiAudioPitch()" id="hero-audio-btn" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 px-6 py-3.5 rounded-xl font-bold text-sm shadow-lg shadow-amber-500/20 transition flex items-center space-x-2.5">
+                            <i class="fa-solid fa-volume-high text-slate-950" id="hero-audio-icon"></i>
+                            <span id="hero-audio-text">Escuchar Pitch en Voz (IA Gemini)</span>
+                        </button>
+
+                        <a href="#presentacion-pptx" class="bg-brand-600 hover:bg-brand-500 text-white px-6 py-3.5 rounded-xl font-semibold text-sm shadow-lg shadow-brand-600/30 transition flex items-center space-x-2.5">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <span>Ver Presentación PPTX</span>
+                        </a>
+
+                        <a href="#ia-herramientas" class="bg-slate-800 hover:bg-slate-700 text-slate-200 px-5 py-3.5 rounded-xl font-semibold text-sm border border-slate-700 transition flex items-center space-x-2">
+                            <i class="fa-solid fa-wand-magic-sparkles text-amber-400"></i>
+                            <span>Evaluador IA</span>
+                        </a>
+                    </div>
+
+                    <!-- Hidden HTML Audio Element for TTS -->
+                    <audio id="gemini-audio-player" class="hidden"></audio>
+                    <div id="audio-status-banner" class="hidden text-xs bg-slate-800/90 border border-amber-500/40 p-3 rounded-xl text-amber-300 flex items-center space-x-3 max-w-lg">
+                        <i class="fa-solid fa-spinner fa-spin text-amber-400" id="audio-banner-spinner"></i>
+                        <span id="audio-status-msg">Generando audio con Gemini TTS...</span>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <!-- Stat Highlight Card -->
+                        <div class="glass-card rounded-3xl p-7 relative z-10 space-y-6">
+                            <div class="flex items-center space-x-4 border-b border-slate-700/60 pb-5">
+                                <div class="w-12 h-12 rounded-2xl bg-brand-500/20 text-brand-400 flex items-center justify-center font-bold text-xl border border-brand-500/30">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 font-bold uppercase tracking-wider">Métrica de Eficiencia</p>
+                                    <p class="text-2xl font-bold text-white">35 días promedio</p>
+                                    <p class="text-xs text-slate-400">Ciclo de cobranza y control de flujo de efectivo</p>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-3 text-center">
+                                <div class="bg-slate-800/80 p-3.5 rounded-2xl border border-slate-700/60">
+                                    <p class="text-xl font-bold text-brand-400">6+ Años</p>
+                                    <p class="text-xs text-slate-400">Experiencia B2B</p>
+                                </div>
+                                <div class="bg-slate-800/80 p-3.5 rounded-2xl border border-slate-700/60">
+                                    <p class="text-xl font-bold text-emerald-400">100%</p>
+                                    <p class="text-xs text-slate-400">Cumplimiento SLAs</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-seny-500/10 border border-seny-500/20 p-3.5 rounded-2xl text-xs text-seny-300 flex items-center space-x-3">
+                                <i class="fa-solid fa-award text-seny-400 text-base"></i>
+                                <span>Certificada en Google PM, Data Analytics & Six Sigma</span>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 w-full h-full bg-brand-600/10 rounded-3xl -z-0 blur-lg"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="ia-herramientas" class="py-20 bg-slate-950 border-t border-slate-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <div class="inline-flex items-center space-x-2 bg-amber-500/10 border border-amber-500/20 px-4 py-1.5 rounded-full text-amber-400 text-xs font-semibold mb-3">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Gemini AI Integration Suite</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Explora el Perfil de Fer con Inteligencia Artificial</h2>
+                <p class="text-slate-400 text-sm mt-3">
+                    Herramientas interactivas impulsadas por modelos de Google Gemini (`gemini-3-flash-preview` & `gemini-2.5-flash-preview-tts`) para reclutadores, líderes de equipo y clientes B2B.
+                </p>
+            </div>
+
+            <!-- AI Hub Navigation Tabs -->
+            <div class="flex justify-center mb-8">
+                <div class="bg-slate-900 p-1.5 rounded-2xl border border-slate-800 flex flex-wrap justify-center gap-1 text-xs font-semibold max-w-2xl w-full">
+                    <button onclick="switchAiTab('chat')" id="tab-btn-chat" class="ai-tab-btn flex-1 py-2.5 px-4 rounded-xl text-white bg-brand-600 transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>Asistente de Reclutamiento</span>
+                    </button>
+                    <button onclick="switchAiTab('jd')" id="tab-btn-jd" class="ai-tab-btn flex-1 py-2.5 px-4 rounded-xl text-slate-400 hover:text-white transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-sliders"></i>
+                        <span>Evaluador de Vacante</span>
+                    </button>
+                    <button onclick="switchAiTab('roadmap')" id="tab-btn-roadmap" class="ai-tab-btn flex-1 py-2.5 px-4 rounded-xl text-slate-400 hover:text-white transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <span>Solución a tu Reto</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- AI TAB 1: RECRUITER CHATBOT -->
+            <div id="ai-tab-chat" class="glass-card rounded-3xl border border-slate-800 p-6 md:p-8 max-w-4xl mx-auto shadow-2xl">
+                <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center border border-amber-500/30">
+                            <i class="fa-solid fa-robot text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-base">Asistente Virtual de Fer Bueno</h3>
+                            <p class="text-xs text-slate-400">Responde preguntas sobre trayectoria, proyectos, metodologías y habilidades</p>
+                        </div>
+                    </div>
+                    <span class="text-[10px] bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-full border border-emerald-500/30 font-bold flex items-center gap-1">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Online
+                    </span>
+                </div>
+
+                <!-- Quick Query Chips -->
+                <div class="mb-4">
+                    <p class="text-xs text-slate-400 mb-2 font-medium">Preguntas frecuentes sugeridas:</p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <button onclick="sendQuickPrompt('¿Cuál es la experiencia principal de Fer en el sector automotriz y gestión de SLAs?')" class="bg-slate-800/80 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-xl border border-slate-700 transition text-left">
+                            🚗 Experiencia Automotriz & SLAs
+                        </button>
+                        <button onclick="sendQuickPrompt('¿Cómo implementó los OKRs y cuáles fueron los resultados?')" class="bg-slate-800/80 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-xl border border-slate-700 transition text-left">
+                            🎯 Implementación de OKRs
+                        </button>
+                        <button onclick="sendQuickPrompt('¿Qué competencias tiene como Product Owner B2B y diseño de sistemas?')" class="bg-slate-800/80 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-xl border border-slate-700 transition text-left">
+                            💻 Rol de Product Owner B2B
+                        </button>
+                        <button onclick="sendQuickPrompt('Cuéntame sobre su iniciativa social Seny Club de Impulso y su voluntariado.')" class="bg-slate-800/80 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-xl border border-slate-700 transition text-left">
+                            📚 Seny Club & Voluntariado
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Chat History Box -->
+                <div id="ai-chat-history" class="bg-slate-950 p-4 rounded-2xl border border-slate-800/80 min-h-[260px] max-h-[380px] overflow-y-auto space-y-4 custom-scrollbar text-xs">
+                    <div class="flex items-start space-x-3">
+                        <div class="w-7 h-7 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0 text-xs font-bold border border-amber-500/30">
+                            IA
+                        </div>
+                        <div class="bg-slate-900 border border-slate-800 text-slate-200 p-3.5 rounded-2xl rounded-tl-none max-w-2xl leading-relaxed">
+                            ¡Hola! Soy el asistente interactivo de Fernanda Bueno. Puedo brindarte información precisa sobre sus 6+ años de experiencia B2B, sus certificaciones de Google, proyectos de optimización de flujos de caja y liderazgo social. ¿Qué te gustaría consultar hoy?
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Input Box -->
+                <div class="mt-4 flex gap-2">
+                    <input type="text" id="ai-chat-input" onkeydown="if(event.key==='Enter') sendAiMessage()" placeholder="Escribe tu pregunta sobre Fer aquí..." class="flex-1 bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition">
+                    <button onclick="sendAiMessage()" id="ai-send-btn" class="bg-brand-600 hover:bg-brand-500 text-white px-5 py-3 rounded-xl font-bold text-xs transition flex items-center space-x-2 shadow-lg shadow-brand-600/30">
+                        <span>Enviar</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- AI TAB 2: JOB DESCRIPTION MATCH ANALYZER -->
+            <div id="ai-tab-jd" class="hidden glass-card rounded-3xl border border-slate-800 p-6 md:p-8 max-w-4xl mx-auto shadow-2xl">
+                <div class="flex items-center space-x-3 border-b border-slate-800 pb-4 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-brand-500/20 text-brand-400 flex items-center justify-center border border-brand-500/30">
+                        <i class="fa-solid fa-clipboard-check text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Evaluador de Compatibilidad con Vacante</h3>
+                        <p class="text-xs text-slate-400">Pega los requisitos de tu puesto o descripción de vacante para analizar el ajuste con Fer</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1.5">Descripción o Requisitos del Puesto (Job Description):</label>
+                        <textarea id="jd-input-text" rows="4" placeholder="Ejemplo: Buscamos Project Manager u Operador B2B con experiencia en métricas, control de proveedores, seguimiento de SLAs, metodologías ágiles y relacionamiento con cuentas automotrices..." class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition"></textarea>
+                    </div>
+
+                    <button onclick="analyzeJobMatch()" id="jd-analyze-btn" class="w-full bg-gradient-to-r from-brand-600 to-accent-600 hover:from-brand-500 hover:to-accent-500 text-white py-3 rounded-xl font-bold text-xs transition shadow-lg shadow-brand-600/30 flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <span>Analizar Compatibilidad con Perfil de Fer</span>
+                    </button>
+
+                    <div id="jd-result-container" class="hidden bg-slate-950 p-5 rounded-2xl border border-slate-800 space-y-4 text-xs">
+                        <!-- Result populated by Gemini -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI TAB 3: CUSTOM SOLUTION ROADMAP -->
+            <div id="ai-tab-roadmap" class="hidden glass-card rounded-3xl border border-slate-800 p-6 md:p-8 max-w-4xl mx-auto shadow-2xl">
+                <div class="flex items-center space-x-3 border-b border-slate-800 pb-4 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center border border-purple-500/30">
+                        <i class="fa-solid fa-diagram-project text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Generador de Propuesta de Solución para tu Empresa</h3>
+                        <p class="text-xs text-slate-400">Describe un reto operativo o financiero de tu organización y Gemini proyectará cómo Fer lo abordaría</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1.5">Giro o Sector de tu Empresa:</label>
+                            <select id="roadmap-industry" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-brand-500">
+                                <option value="Automotriz & Manufactura Industrial">Automotriz & Manufactura Industrial</option>
+                                <option value="Servicios Tecnológicos / Software B2B">Servicios Tecnológicos / Software B2B</option>
+                                <option value="Logística, Distribución & Operaciones">Logística, Distribución & Operaciones</option>
+                                <option value="Consultoría / Servicios Corporativos">Consultoría / Servicios Corporativos</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1.5">Reto Principal a Resolver:</label>
+                            <input type="text" id="roadmap-challenge" placeholder="Ej: Retrasos en cobranza, falta de estandarización o re-trabajos" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-brand-500">
+                        </div>
+                    </div>
+
+                    <button onclick="generateCustomRoadmap()" id="roadmap-btn" class="w-full bg-purple-600 hover:bg-purple-500 text-white py-3 rounded-xl font-bold text-xs transition shadow-lg shadow-purple-600/30 flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-compass"></i>
+                        <span>Generar Hoja de Ruta Personalizada</span>
+                    </button>
+
+                    <div id="roadmap-result" class="hidden bg-slate-950 p-5 rounded-2xl border border-slate-800 space-y-3 text-xs">
+                        <!-- Result populated by Gemini -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="presentacion-pptx" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <div class="inline-flex items-center space-x-2 bg-slate-900 border border-slate-800 px-4 py-1 rounded-full text-brand-400 text-xs font-semibold mb-3">
+                    <i class="fa-solid fa-desktop"></i>
+                    <span>Visor Digital de Entregables (Modo Diapositivas)</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Presentación Interactiva de Proyectos</h2>
+                <p class="text-slate-400 text-sm mt-3">
+                    Explora diapositiva por diapositiva la documentación, matrices de control, capacitaciones y evidencias de impacto diseñadas de forma autónoma.
+                </p>
+            </div>
+
+            <!-- Slide Deck Container -->
+            <div class="glass-card rounded-3xl border border-slate-800 shadow-2xl overflow-hidden max-w-5xl mx-auto">
+                <!-- Deck Top Bar -->
+                <div class="bg-slate-900 px-5 py-4 border-b border-slate-800 flex flex-wrap justify-between items-center gap-3">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+                        <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+                        <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+                        <span class="text-xs text-slate-400 font-mono ml-2 hidden sm:inline">Presentacion_Portafolio_FernandaBueno.pptx</span>
+                    </div>
+
+                    <!-- Category Tabs -->
+                    <div class="flex items-center space-x-1 bg-slate-950 p-1 rounded-xl text-xs font-medium border border-slate-800">
+                        <button onclick="filterSlides('all')" class="slide-tab active px-3 py-1.5 rounded-lg text-white bg-brand-600" data-category="all">Todos</button>
+                        <button onclick="filterSlides('proceso')" class="slide-tab px-3 py-1.5 rounded-lg text-slate-400 hover:text-white" data-category="proceso">Procesos & OKRs</button>
+                        <button onclick="filterSlides('product')" class="slide-tab px-3 py-1.5 rounded-lg text-slate-400 hover:text-white" data-category="product">Product Owner</button>
+                        <button onclick="filterSlides('seny')" class="slide-tab px-3 py-1.5 rounded-lg text-slate-400 hover:text-white" data-category="seny">Seny & Voluntariado</button>
+                    </div>
+
+                    <div class="flex items-center space-x-2 text-xs text-slate-400 font-semibold">
+                        <span id="slide-counter">Diapositiva 1 de 8</span>
+                        <button onclick="toggleFullscreen()" class="p-1.5 hover:bg-slate-800 rounded-lg text-slate-300 transition" title="Pantalla completa">
+                            <i class="fa-solid fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SLIDE CANVAS DISPLAY -->
+                <div class="p-6 md:p-10 bg-slate-900/50 min-h-[440px] flex flex-col justify-between">
+                    <div id="slide-content-area" class="slide-fade">
+                        <!-- Injected Slide Content -->
+                    </div>
+
+                    <!-- SLIDE BOTTOM NAVIGATION -->
+                    <div class="flex justify-between items-center border-t border-slate-800 pt-6 mt-6">
+                        <button onclick="prevSlide()" class="bg-slate-800 hover:bg-slate-700 text-white text-xs font-medium px-4 py-2.5 rounded-xl transition flex items-center space-x-2 border border-slate-700">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            <span>Anterior</span>
+                        </button>
+
+                        <!-- Thumbnail Dots -->
+                        <div id="slide-dots" class="flex space-x-2 overflow-x-auto max-w-xs sm:max-w-md py-1 custom-scrollbar">
+                            <!-- Injected Dots -->
+                        </div>
+
+                        <button onclick="nextSlide()" class="bg-brand-600 hover:bg-brand-500 text-white text-xs font-medium px-4 py-2.5 rounded-xl transition flex items-center space-x-2 shadow-lg shadow-brand-600/30">
+                            <span>Siguiente</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center text-xs text-slate-500 mt-4">
+                <i class="fa-solid fa-shield-halved mr-1"></i> Nota de privacidad: Todos los documentos exhibidos han sido anonimizados para resguardar la confidencialidad corporativa.
+            </p>
+        </div>
+    </section>
+
+    <section id="proyectos" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-400 mb-2 block">Casos de Éxito & Entregables</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Documentación y Herramientas Creadas</h2>
+                </div>
+                <p class="text-slate-400 text-sm max-w-md mt-4 md:mt-0">
+                    Sistemas de control, manuales e iniciativas estructuradas por autoría propia para agilizar la operación y garantizar la calidad.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- CASO 1: OKRs -->
+                <div class="glass-card rounded-3xl overflow-hidden border border-slate-800 hover:border-slate-700 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="p-6 border-b border-slate-800 bg-slate-950/40">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="bg-brand-500/20 text-brand-300 text-xs font-bold px-3 py-1 rounded-full border border-brand-500/30">Estrategia Operativa</span>
+                                <span class="text-xs text-slate-400"><i class="fa-solid fa-pen-nib mr-1"></i>Iniciativa Propia</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Codiseño del Marco de OKRs Organizacional</h3>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Estructuración de Objetivos y Resultados Clave (KRs) para la dirección. Definición y propuesta directa de los <strong>puntos de control</strong> requeridos para asegurar la rentabilidad de proyectos y reducir re-trabajos.
+                            </p>
+                            <ul class="text-xs text-slate-400 space-y-2 border-l-2 border-brand-500 pl-4">
+                                <li><strong>Objetivo:</strong> Incrementar el margen neto promedio de proyectos del 18% al 25%.</li>
+                                <li><strong>Acción Clave:</strong> Creación de checklists de calidad, staging y política de respaldos.</li>
+                                <li><strong>Impacto:</strong> Estandarización documental y mayor certidumbre financiera.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-800/80 flex justify-between items-center bg-slate-950/20">
+                        <span class="text-xs text-slate-400"><i class="fa-solid fa-table text-brand-400 mr-1.5"></i> Cuadro OKR Dirección</span>
+                        <button onclick="goToSlideIndex(1)" class="text-xs font-bold text-brand-400 hover:text-brand-300 transition">Ver en la Galería &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- CASO 2: PRODUCT OWNER / APP B2B -->
+                <div class="glass-card rounded-3xl overflow-hidden border border-slate-800 hover:border-slate-700 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="p-6 border-b border-slate-800 bg-slate-950/40">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="bg-amber-500/20 text-amber-300 text-xs font-bold px-3 py-1 rounded-full border border-amber-500/30">Product Owner</span>
+                                <span class="text-xs text-slate-400"><i class="fa-solid fa-shield-halved mr-1"></i>Info Anonimizada</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Matriz de Permisos & Arquitectura B2B</h3>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Levantamiento de requerimientos y diseño del flujo operativo para aplicación web/móvil B2B. Asignación de roles (Admin, KAM, Supervisor, Ventas) e interacción de funciones.
+                            </p>
+                            <ul class="text-xs text-slate-400 space-y-2 border-l-2 border-amber-500 pl-4">
+                                <li><strong>Matriz de Permisos:</strong> Control estricto de accesos según la fase de ventas y servicios.</li>
+                                <li><strong>Trazabilidad:</strong> Integración de firmas digitales y control de órdenes de compra.</li>
+                                <li><strong>Reportes:</strong> Automatización de reportes finales y evidencias fotográficas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-800/80 flex justify-between items-center bg-slate-950/20">
+                        <span class="text-xs text-slate-400"><i class="fa-solid fa-user-gear text-amber-400 mr-1.5"></i> Matriz de Roles & Diagrama</span>
+                        <button onclick="goToSlideIndex(3)" class="text-xs font-bold text-brand-400 hover:text-brand-300 transition">Ver en la Galería &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- CASO 3: CUENTA CLAVE AUTOMOTRIZ -->
+                <div class="glass-card rounded-3xl overflow-hidden border border-slate-800 hover:border-slate-700 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="p-6 border-b border-slate-800 bg-slate-950/40">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="bg-emerald-500/20 text-emerald-300 text-xs font-bold px-3 py-1 rounded-full border border-emerald-500/30">Project Management</span>
+                                <span class="text-xs text-slate-400"><i class="fa-solid fa-car mr-1"></i>Cuenta Clave</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Gestión de Backlog & Cronogramas Gantt</h3>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Control del backlog de requerimientos para la cuenta del sector automotriz. Análisis de riesgos, cumplimiento de normatividad industrial y monitoreo de sprints.
+                            </p>
+                            <ul class="text-xs text-slate-400 space-y-2 border-l-2 border-emerald-500 pl-4">
+                                <li><strong>Gantt Integrado:</strong> Vinculación entre revisiones de calidad (QA) e hitos de facturación.</li>
+                                <li><strong>Atención Directa:</strong> Seguimiento de auditorías y soporte de inicio a fin.</li>
+                                <li><strong>Automatización:</strong> Encuestas de satisfacción y reportes de desempeño.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-800/80 flex justify-between items-center bg-slate-950/20">
+                        <span class="text-xs text-slate-400"><i class="fa-solid fa-chart-gantt text-emerald-400 mr-1.5"></i> Gantt & Backlog</span>
+                        <button onclick="goToSlideIndex(4)" class="text-xs font-bold text-brand-400 hover:text-brand-300 transition">Ver en la Galería &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- CASO 4: CAPACITACIÓN Y MANUALES -->
+                <div class="glass-card rounded-3xl overflow-hidden border border-slate-800 hover:border-slate-700 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="p-6 border-b border-slate-800 bg-slate-950/40">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="bg-purple-500/20 text-purple-300 text-xs font-bold px-3 py-1 rounded-full border border-purple-500/30">Capacitación</span>
+                                <span class="text-xs text-slate-400"><i class="fa-solid fa-book-open mr-1"></i>Autoría Propia</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Manuales de Excel & Presentaciones</h3>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Creación de material instructivo para capacitar y homologar competencias técnicas en el equipo operativo sobre el uso eficiente de Excel y mejores prácticas.
+                            </p>
+                            <ul class="text-xs text-slate-400 space-y-2 border-l-2 border-purple-500 pl-4">
+                                <li><strong>Autoría:</strong> Edición del "Manual de Excel Básico" de adopción ágil.</li>
+                                <li><strong>Alineación:</strong> Presentaciones modulares con temarios, atajos y ejercicios.</li>
+                                <li><strong>Impacto:</strong> Reducción de la curva de aprendizaje en tareas cotidianas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-slate-800/80 flex justify-between items-center bg-slate-950/20">
+                        <span class="text-xs text-slate-400"><i class="fa-solid fa-file-powerpoint text-purple-400 mr-1.5"></i> Diapositivas & Manual</span>
+                        <button onclick="goToSlideIndex(5)" class="text-xs font-bold text-brand-400 hover:text-brand-300 transition">Ver en la Galería &rarr;</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="trayectoria" class="py-20 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-400 mb-2 block">Experiencia Profesional</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Trayectoria Destacada</h2>
+            </div>
+
+            <div class="relative border-l-2 border-slate-800 space-y-12 ml-4 md:ml-32">
+
+                <!-- EMPRESA ACTUAL (ANONIMIZADA) -->
+                <div class="relative pl-8">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 border-4 border-slate-950"></div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between items-start mb-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Coordinadora Administrativa & Product Owner</h3>
+                            <p class="text-sm font-semibold text-brand-400">Empresa de Servicios Tecnológicos & B2B (Confidencial)</p>
+                        </div>
+                        <span class="text-xs font-medium bg-slate-800 text-slate-300 px-3.5 py-1 rounded-full border border-slate-700 mt-1 sm:mt-0">Feb 2022 – Presente</span>
+                    </div>
+                    <ul class="text-xs sm:text-sm text-slate-300 space-y-2 list-disc list-inside mt-3">
+                        <li>Atención a la cuenta clave del sector automotriz, reportes y resolución de auditorías críticas.</li>
+                        <li>Liderazgo en la entrega de proyectos garantizando cumplimiento de SLAs, control de cambios y tiempos.</li>
+                        <li>Gestión del ciclo completo de facturación y cobranza, manteniendo una cartera promedio de 35 días.</li>
+                        <li>Codiseño del marco de OKRs organizacional para optimizar la calidad operativa y los márgenes de rentabilidad.</li>
+                    </ul>
+                </div>
+
+                <!-- MUNSEG -->
+                <div class="relative pl-8">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950"></div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between items-start mb-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Asistente de Dirección de Operaciones</h3>
+                            <p class="text-sm font-semibold text-slate-400">Munseg</p>
+                        </div>
+                        <span class="text-xs font-medium bg-slate-800 text-slate-300 px-3.5 py-1 rounded-full border border-slate-700 mt-1 sm:mt-0">Abr 2019 – Oct 2020</span>
+                    </div>
+                    <ul class="text-xs sm:text-sm text-slate-300 space-y-2 list-disc list-inside mt-3">
+                        <li>Gestión de la cartera de cobranza, reduciendo días de pago e incrementando el flujo de efectivo del 10% al 12%.</li>
+                        <li>Promoción de apoyo logístico a asistente de dirección en un periodo de 6 meses por alto desempeño.</li>
+                        <li>Conciliación de facturas (CFDI) contra órdenes de compra y movimientos en SAP ERP.</li>
+                    </ul>
+                </div>
+
+                <!-- WALMART -->
+                <div class="relative pl-8">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950"></div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between items-start mb-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Asistente de Gerencia</h3>
+                            <p class="text-sm font-semibold text-slate-400">Operadora Walmart</p>
+                        </div>
+                        <span class="text-xs font-medium bg-slate-800 text-slate-300 px-3.5 py-1 rounded-full border border-slate-700 mt-1 sm:mt-0">Jun 2014 – Dic 2018</span>
+                    </div>
+                    <ul class="text-xs sm:text-sm text-slate-300 space-y-2 list-disc list-inside mt-3">
+                        <li>Control de la normatividad legal ante dependencias de gobierno (STPS, Secretaría de Salud, COFEPRIS).</li>
+                        <li>Atención a proveedores, facturación a clientes y apoyo en coordinación operativa general.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="seny" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-seny-500/10 border border-seny-500/20 px-3.5 py-1.5 rounded-full text-seny-400 text-xs font-bold">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Liderazgo Social & Voluntariado</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Seny Club de Impulso & Valores Comunitarios
+                    </h2>
+
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Cofundadora de <strong>Seny Club de Impulso</strong>, un espacio dedicado a promover la lectura, el pensamiento crítico y el desarrollo continuo. Adicionalmente, participo de manera activa como soldada voluntaria del Servicio Militar Nacional.
+                    </p>
+
+                    <div class="space-y-3.5">
+                        <div class="flex items-start space-x-3.5 bg-slate-800/80 p-4 rounded-2xl border border-slate-700/80">
+                            <div class="w-10 h-10 rounded-xl bg-seny-500/20 text-seny-400 flex items-center justify-center font-bold text-base flex-shrink-0 border border-seny-500/30">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Club de Lectura & Coordinación</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Organización de sesiones de reflexión, dinámicas de pensamiento y desarrollo del curso "Pensar Mejor para Decidir Mejor".</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3.5 bg-slate-800/80 p-4 rounded-2xl border border-slate-700/80">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-base flex-shrink-0 border border-emerald-500/30">
+                                <i class="fa-solid fa-person-military-rifle"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Mujer Voluntaria del S.M.N.</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Compromiso con la disciplina cívica, el servicio comunitario y el trabajo colaborativo en actos solemnes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <button onclick="goToSlideIndex(6)" class="bg-seny-600 hover:bg-seny-500 text-white text-xs font-semibold px-5 py-3 rounded-xl transition flex items-center space-x-2 shadow-lg shadow-seny-600/20">
+                            <i class="fa-solid fa-images"></i>
+                            <span>Ver Evidencias Fotográficas</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="glass-card p-8 rounded-3xl border border-slate-800 space-y-6">
+                        <blockquote class="text-slate-200 italic text-base border-l-4 border-seny-500 pl-4 py-1">
+                            "Haz lo que puedas, con lo que tengas, donde estés. Creo firmemente que siempre podemos inspirarnos y no debemos dejar de crear."
+                        </blockquote>
+
+                        <div class="grid grid-cols-2 gap-3 text-xs">
+                            <div class="bg-slate-800/80 p-4 rounded-2xl border border-slate-700/60 text-slate-300">
+                                <span class="font-bold block text-seny-400 mb-1">Proyecto Semillas</span>
+                                Taller interactivo de pensamiento crítico para la toma de decisiones.
+                            </div>
+                            <div class="bg-slate-800/80 p-4 rounded-2xl border border-slate-700/60 text-slate-300">
+                                <span class="font-bold block text-brand-400 mb-1">Hábitos Integrales</span>
+                                Lectura constante, running, viajes y aprendizaje activo de inglés.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="certificaciones" class="py-20 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-400 mb-2 block">Respaldo Académico</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Certificaciones & Herramientas</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                
+                <div class="glass-card p-5 rounded-2xl border border-slate-800 flex items-start space-x-4">
+                    <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold text-lg flex-shrink-0 border border-blue-500/30">
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Gestión de Proyectos de Google</h4>
+                        <p class="text-xs text-slate-400 mt-0.5">Google / Coursera (Nov 2023)</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-5 rounded-2xl border border-slate-800 flex items-start space-x-4">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-lg flex-shrink-0 border border-emerald-500/30">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Análisis de Datos de Google</h4>
+                        <p class="text-xs text-slate-400 mt-0.5">Google / Coursera (Dic 2025)</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-5 rounded-2xl border border-slate-800 flex items-start space-x-4">
+                    <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-lg flex-shrink-0 border border-amber-500/30">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Lean Six Sigma White Belt</h4>
+                        <p class="text-xs text-slate-400 mt-0.5">International Lean Six Sigma (Nov 2024)</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-5 rounded-2xl border border-slate-800 flex items-start space-x-4">
+                    <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-lg flex-shrink-0 border border-purple-500/30">
+                        <i class="fa-solid fa-file-excel"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Certificación Excel 2019</h4>
+                        <p class="text-xs text-slate-400 mt-0.5">Tecnología Educativa / ISTE (Jul 2025)</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-5 rounded-2xl border border-slate-800 flex items-start space-x-4">
+                    <div class="w-10 h-10 rounded-xl bg-brand-500/20 text-brand-400 flex items-center justify-center font-bold text-lg flex-shrink-0 border border-brand-500/30">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Indicadores Clave (KPIs)</h4>
+                        <p class="text-xs text-slate-400 mt-0.5">UASLP (Sep 2024)</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-5 rounded-2xl border border-slate-800 flex items-start space-x-4">
+                    <div class="w-10 h-10 rounded-xl bg-slate-800 text-slate-300 flex items-center justify-center font-bold text-lg flex-shrink-0 border border-slate-700">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Lic. en Administración de Empresas</h4>
+                        <p class="text-xs text-slate-400 mt-0.5">Univ. José Vasconcelos (Gestión PyMEs)</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl border border-slate-800">
+                <h4 class="text-xs font-bold text-slate-400 mb-4 uppercase tracking-wider">Sistemas & Metodologías Clave</h4>
+                <div class="flex flex-wrap gap-2.5">
+                    <span class="bg-slate-800 text-slate-200 text-xs font-medium px-3.5 py-1.5 rounded-xl border border-slate-700">SAP ERP</span>
+                    <span class="bg-slate-800 text-slate-200 text-xs font-medium px-3.5 py-1.5 rounded-xl border border-slate-700">Microsoft Excel</span>
+                    <span class="bg-slate-800 text-slate-200 text-xs font-medium px-3.5 py-1.5 rounded-xl border border-slate-700">ASPEL SAE</span>
+                    <span class="bg-slate-800 text-slate-200 text-xs font-medium px-3.5 py-1.5 rounded-xl border border-slate-700">Zoho CRM</span>
+                    <span class="bg-slate-800 text-slate-200 text-xs font-medium px-3.5 py-1.5 rounded-xl border border-slate-700">ISO 9001:2015</span>
+                    <span class="bg-slate-800 text-slate-200 text-xs font-medium px-3.5 py-1.5 rounded-xl border border-slate-700">Seguimiento de OKRs</span>
+                    <span class="bg-slate-800 text-slate-200 text-xs font-medium px-3.5 py-1.5 rounded-xl border border-slate-700">Auditorías & Cumplimiento</span>
+                    <span class="bg-slate-800 text-slate-200 text-xs font-medium px-3.5 py-1.5 rounded-xl border border-slate-700">Gestión de Portales B2B</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-20 bg-slate-900 text-white border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">¿Platicamos sobre tu próximo proyecto?</h2>
+            <p class="text-slate-400 max-w-xl mx-auto text-sm mb-8 leading-relaxed">
+                Disponible para oportunidades en coordinación administrativa, gestión de proyectos B2B y liderazgo de producto.
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <a href="mailto:manager.jfbueno@gmail.com" class="bg-brand-600 hover:bg-brand-500 text-white px-7 py-3.5 rounded-xl font-semibold text-sm transition flex items-center space-x-2.5 shadow-lg shadow-brand-600/30">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>manager.jfbueno@gmail.com</span>
+                </a>
+                <a href="https://linkedin.com/in/jeanette-fernanda-bueno-584a52216" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-slate-200 px-7 py-3.5 rounded-xl font-semibold text-sm transition flex items-center space-x-2.5 border border-slate-700">
+                    <i class="fa-brands fa-linkedin text-brand-400"></i>
+                    <span>Perfil de LinkedIn</span>
+                </a>
+            </div>
+
+            <div class="border-t border-slate-800 pt-8 text-xs text-slate-500">
+                <p>San Luis Potosí, México | Jeanette Fernanda Bueno Becerra</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="fixed bottom-5 right-5 z-50">
+        <button onclick="toggleFloatingChat()" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold px-4 py-3 rounded-full shadow-2xl flex items-center space-x-2.5 transition transform hover:scale-105 border border-amber-300/40">
+            <i class="fa-solid fa-wand-magic-sparkles text-base"></i>
+            <span class="text-xs">Consultar a Fer IA</span>
+        </button>
+    </div>
+
+    <!-- Floating Chat Modal Drawer -->
+    <div id="floating-chat-modal" class="hidden fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex justify-end p-4 sm:p-6">
+        <div class="bg-slate-900 border border-slate-800 w-full max-w-md h-full rounded-3xl flex flex-col justify-between overflow-hidden shadow-2xl">
+            <!-- Modal Header -->
+            <div class="p-4 bg-slate-950 border-b border-slate-800 flex justify-between items-center">
+                <div class="flex items-center space-x-2.5">
+                    <span class="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-sm font-bold border border-amber-500/30"><i class="fa-solid fa-robot"></i></span>
+                    <div>
+                        <h4 class="font-bold text-white text-xs">Asistente Virtual IA</h4>
+                        <p class="text-[10px] text-slate-400">Impulsado por Google Gemini</p>
+                    </div>
+                </div>
+                <button onclick="toggleFloatingChat()" class="text-slate-400 hover:text-white p-2">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Modal Messages -->
+            <div id="floating-chat-body" class="p-4 flex-1 overflow-y-auto space-y-3 custom-scrollbar text-xs">
+                <div class="bg-slate-950 p-3 rounded-2xl text-slate-300 border border-slate-800">
+                    ¡Hola! Puedes hacerme cualquier pregunta sobre Fernanda Bueno (experiencia automotriz, OKRs, gestión de proveedores, certificaciones o voluntariado).
+                </div>
+            </div>
+
+            <!-- Modal Input -->
+            <div class="p-3 bg-slate-950 border-t border-slate-800 flex gap-2">
+                <input type="text" id="floating-chat-input" onkeydown="if(event.key==='Enter') sendFloatingAiMessage()" placeholder="Haz tu pregunta..." class="flex-1 bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-brand-500">
+                <button onclick="sendFloatingAiMessage()" class="bg-brand-600 hover:bg-brand-500 text-white px-3.5 py-2 rounded-xl text-xs font-bold">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const slides = [
+            {
+                id: 1,
+                category: 'proceso',
+                title: 'Marco de OKRs General de Dirección',
+                subtitle: 'Estructuración de Objetivos, KRs y Puntos de Control Directos',
+                badge: 'Matriz Estratégica (Google Sheets)',
+                tagColor: 'bg-brand-600',
+                description: 'Diseño e implementación de Objetivos y Resultados Clave (KRs). Definición y propuesta directa de los puntos de control para relacionar la rentabilidad del proyecto con los tiempos de entrega y evitar re-trabajos.',
+                contentHtml: `
+                    <div class="bg-slate-950 text-slate-200 p-5 rounded-2xl border border-slate-800 overflow-x-auto text-xs shadow-inner">
+                        <div class="font-bold text-white border-b border-slate-800 pb-2 mb-3 flex justify-between items-center">
+                            <span>OKR GENERAL DIRECCIÓN — Optimización de Procesos</span>
+                            <span class="text-brand-400 font-normal text-[11px]"><i class="fa-solid fa-pen-nib mr-1"></i> Iniciativa Propia</span>
+                        </div>
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-slate-900 text-slate-300 font-bold border-b border-slate-800">
+                                    <th class="p-2.5 border border-slate-800">OBJETIVOS</th>
+                                    <th class="p-2.5 border border-slate-800">RESULTADOS CLAVE (KRs)</th>
+                                    <th class="p-2.5 border border-slate-800">ACTIVIDADES POR ÁREA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-slate-800">
+                                    <td class="p-2.5 border border-slate-800 font-medium text-white">1. Optimizar tiempos de entrega mediante estandarización documental.</td>
+                                    <td class="p-2.5 border border-slate-800 text-emerald-400 font-medium">&bull; Incrementar 20% cumplimiento de fechas pactadas.<br>&bull; Reducir 30% horas perdidas en búsqueda de archivos.</td>
+                                    <td class="p-2.5 border border-slate-800 text-slate-300">[Operaciones] Actualizar manual institucional.<br>[PM] Crear nomenclatura estándar antes del kick-off.</td>
+                                </tr>
+                                <tr class="border-b border-slate-800 bg-slate-900/40">
+                                    <td class="p-2.5 border border-slate-800 font-medium text-white">2. Aumentar margen neto promedio de 18% a 25%.</td>
+                                    <td class="p-2.5 border border-slate-800 text-emerald-400 font-medium">&bull; Asegurar 90% de hitos de facturación a tiempo.<br>&bull; Reducir horas no facturables del 15% al 8%.</td>
+                                    <td class="p-2.5 border border-slate-800 text-slate-300">[Administración] Definir políticas de presupuestos.<br>[Administración] Auditar mensualmente compras vs presupuesto.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                `
+            },
+            {
+                id: 2,
+                category: 'proceso',
+                title: 'Matriz "Alto Impacto vs Esfuerzo"',
+                subtitle: 'Análisis de Requerimientos y Priorización de Tareas',
+                badge: 'Análisis Operativo',
+                tagColor: 'bg-amber-600',
+                description: 'Fotografía y análisis del pizarrón de priorización. Clasificación de requerimientos en cuadrantes de "Hacer Ya", "Planificar" y "Spikes" para concentrar los recursos en entregables estratégicos.',
+                contentHtml: `
+                    <div class="bg-slate-950 text-slate-200 p-6 rounded-2xl border border-slate-800 shadow-inner">
+                        <div class="flex items-center justify-between mb-4 border-b border-slate-800 pb-2">
+                            <span class="font-bold text-sm text-amber-400"><i class="fa-solid fa-chalkboard mr-1.5"></i> Matriz de Decisiones Operativas</span>
+                            <span class="text-xs text-slate-500">Pizarrón de Análisis</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 text-xs">
+                            <div class="bg-slate-900/80 p-3.5 rounded-xl border border-slate-800">
+                                <p class="font-bold text-emerald-400 mb-1.5">ALTO IMPACTO / BAJO ESFUERZO (Hacer Ya)</p>
+                                <ul class="list-disc list-inside space-y-1 text-slate-300">
+                                    <li>Encuestas de Satisfacción Automatizadas</li>
+                                    <li>Reporte Mensual Automático de Servicio</li>
+                                    <li>Evidencias y Trazabilidad de Soporte</li>
+                                </ul>
+                            </div>
+                            <div class="bg-slate-900/80 p-3.5 rounded-xl border border-slate-800">
+                                <p class="font-bold text-amber-400 mb-1.5">ALTO IMPACTO / ALTO ESFUERZO (Planificar)</p>
+                                <ul class="list-disc list-inside space-y-1 text-slate-300">
+                                    <li>Desarrollo de Análisis de Riesgos</li>
+                                    <li>Evaluación de Seguridad Industrial</li>
+                                    <li>Rediseño de Flujo de Visitas en Campo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: 3,
+                category: 'product',
+                title: 'Product Owner: Permisos & Roles B2B',
+                subtitle: 'Infografía Funcional para App de Ventas y Servicios',
+                badge: 'Diseño de Producto & UX Workflow',
+                tagColor: 'bg-brand-600',
+                description: 'Matriz de control de funciones para la aplicación web/móvil B2B. Definición rigurosa de permisos según el rol (Administrador, KAM, Supervisor, Ventas), garantizando firma de remisiones y carga de órdenes de compra.',
+                contentHtml: `
+                    <div class="bg-slate-950 text-slate-200 p-5 rounded-2xl border border-slate-800 text-xs space-y-3 shadow-inner">
+                        <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+                            <span class="font-bold text-white">SISTEMA B2B — ROLES Y FUNCIONES</span>
+                            <span class="bg-brand-500/20 text-brand-300 text-[10px] px-2.5 py-0.5 rounded-full font-bold border border-brand-500/30">App Ventas & Servicios</span>
+                        </div>
+                        <div class="grid grid-cols-5 gap-2 text-center font-bold text-[11px] bg-slate-900 p-2 rounded-xl border border-slate-800">
+                            <span>FUNCIÓN</span>
+                            <span>ADMIN</span>
+                            <span>KAM</span>
+                            <span>SUPERVISOR</span>
+                            <span>VENTAS</span>
+                        </div>
+                        <div class="space-y-1.5 text-[11px]">
+                            <div class="grid grid-cols-5 gap-2 items-center text-center py-1.5 border-b border-slate-900">
+                                <span class="text-left font-semibold text-slate-300">Dashboard & KPIs</span>
+                                <span class="text-emerald-400 font-bold"><i class="fa-solid fa-check"></i></span>
+                                <span class="text-emerald-400 font-bold"><i class="fa-solid fa-check"></i></span>
+                                <span class="text-emerald-400 font-bold"><i class="fa-solid fa-check"></i></span>
+                                <span class="text-emerald-400 font-bold"><i class="fa-solid fa-check"></i></span>
+                            </div>
+                            <div class="grid grid-cols-5 gap-2 items-center text-center py-1.5 border-b border-slate-900">
+                                <span class="text-left font-semibold text-slate-300">Carga de Órdenes (OC)</span>
+                                <span class="text-emerald-400 font-bold"><i class="fa-solid fa-check"></i></span>
+                                <span class="text-amber-400"><i class="fa-solid fa-eye"></i> Solo ver</span>
+                                <span class="text-rose-400"><i class="fa-solid fa-xmark"></i> No</span>
+                                <span class="text-emerald-400 font-bold"><i class="fa-solid fa-check"></i></span>
+                            </div>
+                            <div class="grid grid-cols-5 gap-2 items-center text-center py-1.5 border-b border-slate-900">
+                                <span class="text-left font-semibold text-slate-300">Firma de Remisiones & Reportes</span>
+                                <span class="text-emerald-400 font-bold"><i class="fa-solid fa-check"></i></span>
+                                <span class="text-emerald-400 font-bold"><i class="fa-solid fa-check"></i></span>
+                                <span class="text-emerald-400 font-bold"><i class="fa-solid fa-check"></i></span>
+                                <span class="text-rose-400"><i class="fa-solid fa-xmark"></i> No</span>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: 4,
+                category: 'product',
+                title: 'Diagrama Gantt de Proyectos & Hitos',
+                subtitle: 'Control de Cronogramas, Calidad (QA) y Liquidación',
+                badge: 'Project Management (Gantt en Excel)',
+                tagColor: 'bg-emerald-600',
+                description: 'Matriz Gantt de seguimiento semanal para entregables del proyecto. Vinculación explícita entre revisiones de calidad (QA), hitos de facturación con el cliente y liquidación.',
+                contentHtml: `
+                    <div class="bg-slate-950 text-slate-200 p-5 rounded-2xl border border-slate-800 overflow-x-auto text-xs shadow-inner">
+                        <div class="font-bold text-amber-400 border-b border-slate-800 pb-2 mb-3 flex justify-between">
+                            <span>GANTT DE SEGUIMIENTO DE ENTREGABLES & SPRINTS</span>
+                            <span class="text-slate-500 font-normal">Producción Controlada</span>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="bg-slate-900 p-2.5 rounded-xl flex justify-between items-center border border-slate-800">
+                                <div>
+                                    <span class="font-bold block text-white">Sprint 1: Cimentación y Módulo 1</span>
+                                    <span class="text-[10px] text-slate-400">Responsables: Coordinación / Liderazgo</span>
+                                </div>
+                                <span class="bg-emerald-500/20 text-emerald-300 text-[10px] px-2.5 py-0.5 rounded-full border border-emerald-500/30 font-bold">✓ Finalizado</span>
+                                <span class="text-amber-400 font-bold text-[11px]"><i class="fa-solid fa-money-bill-wave mr-1"></i> Facturación Aprobada</span>
+                            </div>
+                            <div class="bg-slate-900 p-2.5 rounded-xl flex justify-between items-center border border-slate-800">
+                                <div>
+                                    <span class="font-bold block text-white">Sprint 2: Revisión de Calidad (QA)</span>
+                                    <span class="text-[10px] text-slate-400">Verificación de Estándares</span>
+                                </div>
+                                <span class="bg-emerald-500/20 text-emerald-300 text-[10px] px-2.5 py-0.5 rounded-full border border-emerald-500/30 font-bold">✓ Finalizado</span>
+                                <span class="text-slate-300 text-[11px]">Enviado a Cliente</span>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: 5,
+                category: 'proceso',
+                title: 'Alineación de Cursos & Manual de Excel',
+                subtitle: 'Material Instruccional y Manual de Excel Básico de Autoría Propia',
+                badge: 'Presentaciones & Capacitación',
+                tagColor: 'bg-purple-600',
+                description: 'Diseño de la presentación de alineación del curso y autoría del "Manual de Excel Básico". Herramientas creadas para estandarizar competencias técnicas en el equipo operativo.',
+                contentHtml: `
+                    <div class="bg-slate-950 text-slate-200 p-6 rounded-2xl border border-slate-800 flex flex-col md:flex-row gap-5 items-center shadow-inner">
+                        <div class="w-28 h-36 bg-slate-900 text-white rounded-xl shadow-md p-3 flex flex-col justify-between text-center flex-shrink-0 border border-slate-700">
+                            <span class="text-[9px] font-bold tracking-widest text-brand-400 uppercase">Documento</span>
+                            <p class="font-extrabold text-xs text-white leading-tight">MANUAL DE EXCEL BÁSICO</p>
+                            <span class="text-[8px] text-slate-400 border-t border-slate-800 pt-1">Fernanda Bueno</span>
+                        </div>
+                        <div class="space-y-2.5">
+                            <span class="bg-purple-500/20 text-purple-300 text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-purple-500/30">Presentación PPTX & Manual</span>
+                            <h4 class="font-bold text-base text-white">Capacitación y Transferencia de Conocimiento</h4>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Diapositivas modulares diseñadas para guiarse paso a paso: atajos de teclado, funciones, manejo de bases de datos y logística del curso.
+                            </p>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: 6,
+                category: 'seny',
+                title: 'Seny Club de Impulso: Proyecto "Semillas de Impacto"',
+                subtitle: 'Pensar Mejor para Decidir Mejor — Taller de Pensamiento Crítico',
+                badge: 'Iniciativa Social & Club de Lectura',
+                tagColor: 'bg-seny-600',
+                description: 'Cofundadora de Seny Club de Impulso. Estructuración del curso práctico "Pensar Mejor para Decidir Mejor", utilizando metodologías como los Seis Sombreros para Pensar, Pensamiento Lateral y Método Científico.',
+                contentHtml: `
+                    <div class="bg-slate-950 border border-slate-800 text-slate-200 p-6 rounded-2xl space-y-3.5 shadow-inner">
+                        <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+                            <span class="font-bold text-sm text-seny-400">Seny CLUB DE IMPULSO</span>
+                            <span class="text-xs bg-seny-500/20 text-seny-300 px-3 py-0.5 rounded-full font-semibold border border-seny-500/30">Cofundadora</span>
+                        </div>
+                        <blockquote class="italic text-xs text-slate-300">
+                            "Vivimos en un mundo lleno de información. Este curso proporciona herramientas prácticas para desarrollar un pensamiento crítico, estratégico y creativo."
+                        </blockquote>
+                        <div class="flex flex-wrap gap-2 text-[11px]">
+                            <span class="bg-slate-900 px-3 py-1 rounded-lg border border-slate-800 text-slate-300 font-medium">Seis Sombreros para Pensar</span>
+                            <span class="bg-slate-900 px-3 py-1 rounded-lg border border-slate-800 text-slate-300 font-medium">Pensamiento Lateral</span>
+                            <span class="bg-slate-900 px-3 py-1 rounded-lg border border-slate-800 text-slate-300 font-medium">Toma de Decisiones</span>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: 7,
+                category: 'seny',
+                title: 'Voluntariado Militar (Servicio Militar Nacional)',
+                subtitle: 'Ceremonia conmemorativa & Toma de Protesta de Bandera',
+                badge: 'Servicio Cívico & Disciplina',
+                tagColor: 'bg-emerald-600',
+                description: 'Participación activa como soldada voluntaria en el Servicio Militar Nacional (S.M.N.), acreditando valores de disciplina, liderazgo cívico, puntualidad y trabajo colaborativo.',
+                contentHtml: `
+                    <div class="bg-slate-950 text-slate-200 p-6 rounded-2xl border border-slate-800 flex items-center space-x-4 shadow-inner">
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xl flex-shrink-0 border border-emerald-500/30">
+                            <i class="fa-solid fa-flag"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-emerald-400 font-bold block">Ceremonia Conmemorativa SMN</span>
+                            <h4 class="font-bold text-sm text-white">Mujer Voluntaria del Servicio Militar Nacional</h4>
+                            <p class="text-xs text-slate-300 mt-1">
+                                Participación oficial en actos cívicos y actividades de impacto social en San Luis Potosí.
+                            </p>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: 8,
+                category: 'seny',
+                title: 'Comunidad & Coordinación de Sesiones',
+                subtitle: 'Organización de Encuentros y Grupos de Estudio',
+                badge: 'Liderazgo de Grupos',
+                tagColor: 'bg-brand-600',
+                description: 'Coordinación directa de logística, lecturas semanales (libros de desarrollo personal como Brian Tracy y filosofías estoicas) y dinámicas comunitarias.',
+                contentHtml: `
+                    <div class="bg-slate-950 text-slate-200 p-5 rounded-2xl border border-slate-800 text-xs space-y-2.5 shadow-inner">
+                        <div class="flex justify-between font-bold border-b border-slate-800 pb-2">
+                            <span>Coordinación de Sesiones de Lectura</span>
+                            <span class="text-brand-400 font-normal"><i class="fa-solid fa-comments mr-1"></i> Comunidad Activa</span>
+                        </div>
+                        <p class="text-slate-300 leading-relaxed italic">
+                            "Marca una intención, trae agenda y lápiz para apuntar ideas. Seguimos avanzando con lecturas de desarrollo estratégico."
+                        </p>
+                        <div class="bg-slate-900 p-3 rounded-xl border border-slate-800 text-[11px] text-slate-400">
+                            <i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Asistencia coordinada mediante encuestas e itinerarios estructurados.
+                        </div>
+                    </div>
+                `
+            }
+        ];
+
+        let currentSlideIndex = 0;
+        let activeCategory = 'all';
+
+        function getFilteredSlides() {
+            if (activeCategory === 'all') return slides;
+            return slides.filter(s => s.category === activeCategory);
+        }
+
+        function renderSlide() {
+            const filtered = getFilteredSlides();
+            if (filtered.length === 0) return;
+
+            if (currentSlideIndex >= filtered.length) {
+                currentSlideIndex = 0;
+            }
+
+            const slide = filtered[currentSlideIndex];
+            const area = document.getElementById('slide-content-area');
+            const counter = document.getElementById('slide-counter');
+
+            counter.innerText = `Diapositiva ${currentSlideIndex + 1} de ${filtered.length}`;
+
+            area.className = 'slide-fade opacity-0 translate-y-2';
+
+            setTimeout(() => {
+                area.innerHTML = `
+                    <div class="space-y-4">
+                        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
+                            <div>
+                                <span class="${slide.tagColor} text-white text-[10px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider">${slide.badge}</span>
+                                <h3 class="text-xl sm:text-2xl font-bold text-white mt-2">${slide.title}</h3>
+                                <p class="text-xs text-slate-400">${slide.subtitle}</p>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE VISUAL -->
+                        <div class="my-4">
+                            ${slide.contentHtml}
+                        </div>
+
+                        <p class="text-xs text-slate-300 leading-relaxed bg-slate-900/80 p-4 rounded-2xl border border-slate-800">
+                            <strong class="text-brand-400">Descripción & Aportación:</strong> ${slide.description}
+                        </p>
+                    </div>
+                `;
+                area.className = 'slide-fade opacity-100 translate-y-0 transition-all duration-300';
+            }, 50);
+
+            renderDots(filtered.length);
+        }
+
+        function renderDots(total) {
+            const container = document.getElementById('slide-dots');
+            container.innerHTML = '';
+            for (let i = 0; i < total; i++) {
+                const btn = document.createElement('button');
+                btn.className = `h-2.5 rounded-full transition-all ${i === currentSlideIndex ? 'bg-brand-500 w-6' : 'bg-slate-700 w-2.5 hover:bg-slate-600'}`;
+                btn.onclick = () => {
+                    currentSlideIndex = i;
+                    renderSlide();
+                };
+                container.appendChild(btn);
+            }
+        }
+
+        function nextSlide() {
+            const filtered = getFilteredSlides();
+            currentSlideIndex = (currentSlideIndex + 1) % filtered.length;
+            renderSlide();
+        }
+
+        function prevSlide() {
+            const filtered = getFilteredSlides();
+            currentSlideIndex = (currentSlideIndex - 1 + filtered.length) % filtered.length;
+            renderSlide();
+        }
+
+        function filterSlides(category) {
+            activeCategory = category;
+            currentSlideIndex = 0;
+            
+            document.querySelectorAll('.slide-tab').forEach(btn => {
+                if (btn.getAttribute('data-category') === category) {
+                    btn.classList.add('bg-brand-600', 'text-white');
+                    btn.classList.remove('text-slate-400');
+                } else {
+                    btn.classList.remove('bg-brand-600', 'text-white');
+                    btn.classList.add('text-slate-400');
+                }
+            });
+
+            renderSlide();
+        }
+
+        function goToSlideIndex(slideId) {
+            activeCategory = 'all';
+            document.querySelectorAll('.slide-tab').forEach(btn => {
+                if (btn.getAttribute('data-category') === 'all') {
+                    btn.classList.add('bg-brand-600', 'text-white');
+                } else {
+                    btn.classList.remove('bg-brand-600', 'text-white');
+                    btn.classList.add('text-slate-400');
+                }
+            });
+            const idx = slides.findIndex(s => s.id === slideId);
+            if (idx !== -1) {
+                currentSlideIndex = idx;
+                renderSlide();
+                document.getElementById('presentacion-pptx').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function toggleFullscreen() {
+            const elem = document.getElementById('presentacion-pptx');
+            if (!document.fullscreenElement) {
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                }
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+
+        const FER_PROFILE_CONTEXT = `
+        Eres el asistente virtual interactivo oficial del portafolio profesional de Jeanette Fernanda Bueno Becerra.
+        Ubicación: San Luis Potosí, México.
+        Formación: Licenciada en Administración de Empresas por la Universidad José Vasconcelos (Especialidad en Gestión de PyMEs).
+        Experiencia: 6+ años en entornos B2B e industriales.
+        Rol Actual (Feb 2022 - Presente): Coordinadora Administrativa & Product Owner B2B en una empresa tecnológica confidencial.
+        - Maneja la atención a la cuenta clave del sector automotriz (BMW), reportes y resolución de auditorías críticas de inicio a fin.
+        - Lidera la entrega de proyectos asegurando cumplimiento de SLAs y control de cambios.
+        - Controla el ciclo completo de facturación y cobranza manteniendo un promedio de cartera de 35 días.
+        - Codiseñó el marco de OKRs organizacional aumentando el margen neto promedio del 18% al 25%.
+        Experiencia Previa:
+        - Munseg (2019-2020): Asistente de Dirección de Operaciones. Cobranza, conciliación CFDI, movimientos en SAP ERP. Incrementó flujo de efectivo del 10% al 12%. Promovida en 6 meses.
+        - Operadora Walmart (2014-2018): Asistente de Gerencia. Trámites normativos STPS, COFEPRIS, relación con proveedores.
+        Certificaciones:
+        - Gestión de Proyectos de Google (Nov 2023)
+        - Análisis de Datos de Google (Dic 2025)
+        - Lean Six Sigma White Belt (Nov 2024)
+        - Certificación Excel 2019 (ISTE / Jul 2025)
+        - Indicadores Clave KPIs (UASLP / Sep 2024)
+        Liderazgo Social & Voluntariado:
+        - Cofundadora de "Seny Club de Impulso": Club de lectura y autoría del curso "Pensar Mejor para Decidir Mejor".
+        - Mujer Voluntaria en el Servicio Militar Nacional (S.M.N.) desde mayo 2024.
+        Habilidades clave: SAP ERP, Excel Intermedio, ASPEL SAE, Zoho CRM, ISO 9001:2015, Auditorías, Portales B2B, Inglés en desarrollo activo.
+        
+        REGLAS DE RESPUESTA:
+        - Sé profesional, claro, empático y entusiasta.
+        - Respuestas concisas en español. Usa viñetas cuando sea conveniente.
+        - Respeta la confidencialidad de su empresa actual refiriéndote a ella como "empresa de servicios tecnológicos B2B".
+        `;
+
+        async function callGeminiApi(payload, model = "gemini-3-flash-preview") {
+            const apiKey = "";
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+            
+            let retries = 0;
+            const maxRetries = 3;
+            let delay = 1000;
+
+            while (retries <= maxRetries) {
+                try {
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return await response.json();
+                } catch (e) {
+                    retries++;
+                    if (retries > maxRetries) throw e;
+                    await new Promise(res => setTimeout(res, delay));
+                    delay *= 2;
+                }
+            }
+        }
+
+        function switchAiTab(tabName) {
+            document.getElementById('ai-tab-chat').classList.add('hidden');
+            document.getElementById('ai-tab-jd').classList.add('hidden');
+            document.getElementById('ai-tab-roadmap').classList.add('hidden');
+
+            document.querySelectorAll('.ai-tab-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-600', 'text-white');
+                btn.classList.add('text-slate-400');
+            });
+
+            document.getElementById(`ai-tab-${tabName}`).classList.remove('hidden');
+            const activeBtn = document.getElementById(`tab-btn-${tabName}`);
+            activeBtn.classList.add('bg-brand-600', 'text-white');
+            activeBtn.classList.remove('text-slate-400');
+        }
+
+        async function sendAiMessage() {
+            const input = document.getElementById('ai-chat-input');
+            const text = input.value.trim();
+            if (!text) return;
+
+            appendChatMessage('user', text);
+            input.value = '';
+
+            const sendBtn = document.getElementById('ai-send-btn');
+            sendBtn.disabled = true;
+            sendBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i>`;
+
+            try {
+                const payload = {
+                    contents: [{ parts: [{ text: text }] }],
+                    systemInstruction: { parts: [{ text: FER_PROFILE_CONTEXT }] }
+                };
+
+                const res = await callGeminiApi(payload, 'gemini-3-flash-preview');
+                const reply = res?.candidates?.[0]?.content?.parts?.[0]?.text || "Lo siento, tuve un problema al procesar la respuesta. Por favor intenta de nuevo.";
+                appendChatMessage('ai', reply);
+            } catch (err) {
+                appendChatMessage('ai', "Disculpa, no pude conectarme al servicio de Gemini en este momento. Intenta nuevamente.");
+            } finally {
+                sendBtn.disabled = false;
+                sendBtn.innerHTML = `<span>Enviar</span> <i class="fa-solid fa-paper-plane"></i>`;
+            }
+        }
+
+        function sendQuickPrompt(promptText) {
+            document.getElementById('ai-chat-input').value = promptText;
+            sendAiMessage();
+        }
+
+        function appendChatMessage(sender, message) {
+            const history = document.getElementById('ai-chat-history');
+            const div = document.createElement('div');
+            
+            if (sender === 'user') {
+                div.className = 'flex items-start justify-end space-x-3';
+                div.innerHTML = `
+                    <div class="bg-brand-600 text-white p-3.5 rounded-2xl rounded-tr-none max-w-xl leading-relaxed">
+                        ${escapeHtml(message)}
+                    </div>
+                    <div class="w-7 h-7 rounded-lg bg-brand-500/20 text-brand-400 flex items-center justify-center flex-shrink-0 text-xs font-bold border border-brand-500/30">
+                        TÚ
+                    </div>
+                `;
+            } else {
+                div.className = 'flex items-start space-x-3';
+                div.innerHTML = `
+                    <div class="w-7 h-7 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0 text-xs font-bold border border-amber-500/30">
+                        IA
+                    </div>
+                    <div class="bg-slate-900 border border-slate-800 text-slate-200 p-3.5 rounded-2xl rounded-tl-none max-w-xl leading-relaxed space-y-2">
+                        ${formatMarkdown(message)}
+                    </div>
+                `;
+            }
+            history.appendChild(div);
+            history.scrollTop = history.scrollHeight;
+        }
+
+        async function analyzeJobMatch() {
+            const jd = document.getElementById('jd-input-text').value.trim();
+            if (!jd) {
+                alertModal("Por favor pega la descripción o requisitos de la vacante para realizar el análisis.");
+                return;
+            }
+
+            const btn = document.getElementById('jd-analyze-btn');
+            btn.disabled = true;
+            btn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> <span>Analizando perfil con Gemini...</span>`;
+
+            const resultContainer = document.getElementById('jd-result-container');
+            resultContainer.classList.remove('hidden');
+            resultContainer.innerHTML = `<div class="text-center text-slate-400 py-4"><i class="fa-solid fa-brain fa-spin text-amber-400 text-xl mb-2"></i><p>Evaluando matriz de competencias y compatibilidad de experiencia...</p></div>`;
+
+            const prompt = `
+            Compara detenidamente la siguiente Descripción de Puesto (Job Description) con el perfil profesional de Fernanda Bueno.
+            
+            Descripción del Puesto:
+            "${jd}"
+            
+            Instrucciones de Respuesta:
+            Genera un informe estructurado que contenga:
+            1. Porcentaje estimado de compatibilidad (ej: 88%).
+            2. Competencias coincidentes directas (3-4 viñetas).
+            3. Entregables de su portafolio que respaldan esta experiencia.
+            4. Breve recomendación final para la entrevista.
+            `;
+
+            try {
+                const payload = {
+                    contents: [{ parts: [{ text: prompt }] }],
+                    systemInstruction: { parts: [{ text: FER_PROFILE_CONTEXT }] }
+                };
+
+                const res = await callGeminiApi(payload, 'gemini-3-flash-preview');
+                const text = res?.candidates?.[0]?.content?.parts?.[0]?.text || "No se pudo generar el análisis.";
+
+                resultContainer.innerHTML = `
+                    <div class="border-b border-slate-800 pb-3 flex justify-between items-center">
+                        <span class="font-bold text-amber-400 text-sm"><i class="fa-solid fa-chart-pie mr-1.5"></i> Resultado de Evaluación de Compatibilidad</span>
+                        <span class="bg-emerald-500/20 text-emerald-400 text-[11px] font-bold px-2.5 py-0.5 rounded-full border border-emerald-500/30">Análisis Gemini</span>
+                    </div>
+                    <div class="text-slate-200 leading-relaxed space-y-2">
+                        ${formatMarkdown(text)}
+                    </div>
+                `;
+            } catch (e) {
+                resultContainer.innerHTML = `<p class="text-rose-400">Ocurrió un error al consultar a Gemini. Por favor reintenta.</p>`;
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = `<i class="fa-solid fa-wand-magic-sparkles"></i> <span>Analizar Compatibilidad con Perfil de Fer</span>`;
+            }
+        }
+
+        async function generateCustomRoadmap() {
+            const industry = document.getElementById('roadmap-industry').value;
+            const challenge = document.getElementById('roadmap-challenge').value.trim();
+
+            if (!challenge) {
+                alertModal("Por favor escribe el reto principal que buscas resolver en tu empresa.");
+                return;
+            }
+
+            const btn = document.getElementById('roadmap-btn');
+            btn.disabled = true;
+            btn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> <span>Diseñando hoja de ruta con Gemini...</span>`;
+
+            const resDiv = document.getElementById('roadmap-result');
+            resDiv.classList.remove('hidden');
+            resDiv.innerHTML = `<div class="text-center text-slate-400 py-3"><i class="fa-solid fa-gear fa-spin text-purple-400 text-xl mb-1"></i><p>Generando plan de acción para ${industry}...</p></div>`;
+
+            const prompt = `
+            Empresa del sector: ${industry}
+            Reto reportado: "${challenge}"
+            
+            Diseña una propuesta de solución en 3 pasos clave de cómo Fernanda Bueno (usando sus metodologías en OKRs, estandarización de procesos, control de cobranza y liderazgo ágil) abordaría este reto específico.
+            Muestra una estimación de impacto esperado.
+            `;
+
+            try {
+                const payload = {
+                    contents: [{ parts: [{ text: prompt }] }],
+                    systemInstruction: { parts: [{ text: FER_PROFILE_CONTEXT }] }
+                };
+
+                const res = await callGeminiApi(payload, 'gemini-3-flash-preview');
+                const text = res?.candidates?.[0]?.content?.parts?.[0]?.text || "No se pudo generar el plan.";
+
+                resDiv.innerHTML = `
+                    <div class="border-b border-slate-800 pb-2 flex justify-between items-center">
+                        <span class="font-bold text-purple-400 text-sm"><i class="fa-solid fa-map-location-dot mr-1.5"></i> Hoja de Ruta Proyectada</span>
+                        <span class="text-[10px] text-slate-400">Sector: ${industry}</span>
+                    </div>
+                    <div class="text-slate-200 leading-relaxed space-y-2">
+                        ${formatMarkdown(text)}
+                    </div>
+                `;
+            } catch (e) {
+                resDiv.innerHTML = `<p class="text-rose-400">Error al comunicarse con Gemini API.</p>`;
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = `<i class="fa-solid fa-compass"></i> <span>Generar Hoja de Ruta Personalizada</span>`;
+            }
+        }
+
+        let audioBlobUrl = null;
+
+        async function playGeminiAudioPitch() {
+            const banner = document.getElementById('audio-status-banner');
+            const statusMsg = document.getElementById('audio-status-msg');
+            const audioPlayer = document.getElementById('gemini-audio-player');
+            const btnText = document.getElementById('hero-audio-text');
+            const btnIcon = document.getElementById('hero-audio-icon');
+
+            if (!audioPlayer.paused && audioBlobUrl) {
+                audioPlayer.pause();
+                btnText.innerText = "Escuchar Pitch en Voz (IA Gemini)";
+                btnIcon.className = "fa-solid fa-volume-high text-slate-950";
+                banner.classList.add('hidden');
+                return;
+            }
+
+            banner.classList.remove('hidden');
+            statusMsg.innerText = "Sintetizando elevator pitch con Gemini TTS (Voz Aoede)...";
+            btnText.innerText = "Cargando Audio IA...";
+            btnIcon.className = "fa-solid fa-spinner fa-spin text-slate-950";
+
+            if (audioBlobUrl) {
+                audioPlayer.play();
+                btnText.innerText = "Pausar Elevator Pitch";
+                btnIcon.className = "fa-solid fa-pause text-slate-950";
+                statusMsg.innerText = "Reproduciendo pitch institucional de Fer Bueno...";
+                return;
+            }
+
+            const promptText = "Di con tono profesional, cálido y estructurado: Hola, soy Fernanda Bueno, Licenciada en Administración con más de 6 años de experiencia en entornos B2B e industriales. Me especializo en coordinar proyectos clave, asegurar cumplimiento de SLAs y optimizar el flujo de caja del negocio. Te invito a explorar mi portafolio e interactuar con el visor de proyectos.";
+
+            const payload = {
+                contents: [{ parts: [{ text: promptText }] }],
+                generationConfig: {
+                    responseModalities: ["AUDIO"],
+                    speechConfig: {
+                        voiceConfig: {
+                            prebuiltVoiceConfig: { voiceName: "Aoede" }
+                        }
+                    }
+                },
+                model: "gemini-2.5-flash-preview-tts"
+            };
+
+            try {
+                const res = await callGeminiApi(payload, 'gemini-2.5-flash-preview-tts');
+                const part = res?.candidates?.[0]?.content?.parts?.[0];
+                const base64Data = part?.inlineData?.data;
+                const mimeType = part?.inlineData?.mimeType || "audio/L16;rate=24000";
+
+                if (base64Data) {
+                    const sampleRateMatch = mimeType.match(/rate=(\d+)/);
+                    const sampleRate = sampleRateMatch ? parseInt(sampleRateMatch[1], 10) : 24000;
+
+                    const pcm16Buffer = base64ToArrayBuffer(base64Data);
+                    const pcm16Array = new Int16Array(pcm16Buffer);
+                    const wavBlob = pcmToWav(pcm16Array, sampleRate);
+
+                    audioBlobUrl = URL.createObjectURL(wavBlob);
+                    audioPlayer.src = audioBlobUrl;
+                    audioPlayer.play();
+
+                    btnText.innerText = "Pausar Elevator Pitch";
+                    btnIcon.className = "fa-solid fa-pause text-slate-950";
+                    statusMsg.innerText = "▶ Reproduciendo audio en vivo con Gemini TTS";
+
+                    audioPlayer.onended = () => {
+                        btnText.innerText = "Escuchar Pitch en Voz (IA Gemini)";
+                        btnIcon.className = "fa-solid fa-volume-high text-slate-950";
+                        banner.classList.add('hidden');
+                    };
+                } else {
+                    throw new Error("No audio bytes received");
+                }
+            } catch (e) {
+                statusMsg.innerText = "No se pudo generar la voz en vivo. Intenta de nuevo.";
+                btnText.innerText = "Escuchar Pitch en Voz (IA Gemini)";
+                btnIcon.className = "fa-solid fa-volume-high text-slate-950";
+            }
+        }
+
+        function base64ToArrayBuffer(base64) {
+            const binaryString = window.atob(base64);
+            const len = binaryString.length;
+            const bytes = new Uint8Array(len);
+            for (let i = 0; i < len; i++) {
+                bytes[i] = binaryString.charCodeAt(i);
+            }
+            return bytes.buffer;
+        }
+
+        function pcmToWav(pcm16Array, sampleRate) {
+            const buffer = new ArrayBuffer(44 + pcm16Array.length * 2);
+            const view = new DataView(buffer);
+
+            writeString(view, 0, 'RIFF');
+            view.setUint32(4, 36 + pcm16Array.length * 2, true);
+            writeString(view, 8, 'WAVE');
+            writeString(view, 12, 'fmt ');
+            view.setUint32(16, 16, true);
+            view.setUint16(20, 1, true); // PCM
+            view.setUint16(22, 1, true); // Mono
+            view.setUint32(24, sampleRate, true);
+            view.setUint32(28, sampleRate * 2, true);
+            view.setUint16(32, 2, true);
+            view.setUint16(34, 16, true);
+            writeString(view, 36, 'data');
+            view.setUint32(40, pcm16Array.length * 2, true);
+
+            let offset = 44;
+            for (let i = 0; i < pcm16Array.length; i++, offset += 2) {
+                view.setInt16(offset, pcm16Array[i], true);
+            }
+
+            return new Blob([buffer], { type: 'audio/wav' });
+        }
+
+        function writeString(view, offset, string) {
+            for (let i = 0; i < string.length; i++) {
+                view.setUint8(offset + i, string.charCodeAt(i));
+            }
+        }
+
+        function toggleFloatingChat() {
+            const modal = document.getElementById('floating-chat-modal');
+            modal.classList.toggle('hidden');
+        }
+
+        async function sendFloatingAiMessage() {
+            const input = document.getElementById('floating-chat-input');
+            const text = input.value.trim();
+            if (!text) return;
+
+            const body = document.getElementById('floating-chat-body');
+            body.innerHTML += `
+                <div class="bg-brand-600 p-2.5 rounded-2xl text-white text-right font-medium">
+                    ${escapeHtml(text)}
+                </div>
+            `;
+            input.value = '';
+            body.scrollTop = body.scrollHeight;
+
+            body.innerHTML += `
+                <div id="floating-loading" class="text-slate-400 italic text-[11px] flex items-center gap-1.5">
+                    <i class="fa-solid fa-spinner fa-spin text-amber-400"></i> Pensando...
+                </div>
+            `;
+
+            try {
+                const payload = {
+                    contents: [{ parts: [{ text: text }] }],
+                    systemInstruction: { parts: [{ text: FER_PROFILE_CONTEXT }] }
+                };
+                const res = await callGeminiApi(payload, 'gemini-3-flash-preview');
+                const reply = res?.candidates?.[0]?.content?.parts?.[0]?.text || "Lo siento, intentalo de nuevo.";
+
+                const loadingEl = document.getElementById('floating-loading');
+                if (loadingEl) loadingEl.remove();
+
+                body.innerHTML += `
+                    <div class="bg-slate-950 p-3 rounded-2xl text-slate-200 border border-slate-800 space-y-1">
+                        ${formatMarkdown(reply)}
+                    </div>
+                `;
+            } catch (e) {
+                const loadingEl = document.getElementById('floating-loading');
+                if (loadingEl) loadingEl.remove();
+                body.innerHTML += `<div class="text-rose-400">Error de conexión.</div>`;
+            }
+            body.scrollTop = body.scrollHeight;
+        }
+
+        function alertModal(msg) {
+            const toast = document.createElement('div');
+            toast.className = 'fixed top-24 right-5 bg-slate-900 border border-amber-500 text-amber-300 px-4 py-3 rounded-2xl text-xs z-50 shadow-2xl flex items-center space-x-2';
+            toast.innerHTML = `<i class="fa-solid fa-circle-info"></i> <span>${escapeHtml(msg)}</span>`;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 3500);
+        }
+
+        function escapeHtml(str) {
+            return str.replace(/[&<>"']/g, function(m) {
+                return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[m];
+            });
+        }
+
+        function formatMarkdown(text) {
+            let formatted = escapeHtml(text);
+            formatted = formatted.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            formatted = formatted.replace(/\*(.*?)\*/g, '<em>$1</em>');
+            formatted = formatted.replace(/\n\n/g, '<br><br>');
+            formatted = formatted.replace(/\n- (.*?)/g, '<br>&bull; $1');
+            return formatted;
+        }
+
+        window.onload = function() {
+            renderSlide();
+        };
+    </script>
+</body>
+</html>
